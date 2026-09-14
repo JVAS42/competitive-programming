@@ -1,0 +1,38 @@
+# Byte-compiled / cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais (Virtualenvs)
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Configurações do PyCharm / JetBrains (evita subir preferências locais da IDE)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos de entrada e saída para testes locais (ex: testar casos de teste da questão)
+input.txt
+output.txt
+in*.txt
+out*.txt
+test*.txt
+*.tmp
+*.log
+
+# Arquivos do Windows e macOS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
