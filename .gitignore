@@ -1,9 +1,17 @@
-# Byte-compiled / cache do Python
-__pycache__/
-*.py[cod]
-*$py.class
+# ==============================================
+# PROJETO ESPECÍFICO (COLOCAR AQUI)
+# ==============================================
 
-# Ambientes virtuais (Virtualenvs)
+# ==========================================
+# SEGURANÇA E AMBIENTES (NUNCA SUBIR)
+# ==========================================
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+*.env
+
+# Ambientes virtuais
 .venv/
 venv/
 env/
@@ -11,28 +19,129 @@ ENV/
 env.bak/
 venv.bak/
 
-# Configurações do PyCharm / JetBrains (evita subir preferências locais da IDE)
-.idea/
-*.iws
-*.iml
-*.ipr
-out/
+# Chaves, tokens e certificados
+secrets.json
+credentials.json
+client_secret.json
+token.pickle
+token.json
+*.pem
+*.key
+*.crt
 
-# Configurações do VS Code
-.vscode/
+# ==========================================
+# PYTHON CORE & BYTECODE
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-selfcheck.json
+pip-log.txt
 
-# Arquivos de entrada e saída para testes locais (ex: testar casos de teste da questão)
-input.txt
-output.txt
-in*.txt
-out*.txt
-test*.txt
-*.tmp
+# Empacotamento e Distribuição (Outputs gerados)
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+
+# ==========================================
+# LOGS, TESTES E CACHES
+# ==========================================
 *.log
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+*.cover
+.hypothesis/
 
-# Arquivos do Windows e macOS
+# ==========================================
+# CIÊNCIA DE DADOS & BANCOS LOCAIS (Arquivos pesados)
+# ==========================================
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Bases de dados locais e arquivos binários
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.hdf5
+*.h5
+*.xlsx
+*.xls
+*.sqlite3
+*.sqlite3-journal
+*.db
+
+# Modelos treinados pesados
+*.pkl
+*.pickle
+*.joblib
+*.keras
+*.pt
+*.pth
+*.onnx
+
+# ==========================================
+# FERRAMENTAS & DRIVERS DE NAVEGADOR
+# ==========================================
+chromedriver*
+geckodriver*
+msedgedriver*
+.scrapy/
+
+# ==========================================
+# FRONTEND / NODE (Se houver dashboard integrado)
+# ==========================================
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+
+# ==========================================
+# IDEs E SISTEMA OPERACIONAL
+# ==========================================
+# Windows
 Thumbs.db
 ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
+desktop.ini
+*.lnk
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code (Ignora histórico e workspace, permite configs compartilhadas da equipe)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
