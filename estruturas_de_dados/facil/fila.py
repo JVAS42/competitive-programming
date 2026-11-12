@@ -2,6 +2,7 @@
 Problema: Fila (OBI 2014)
 Categoria: Estruturas de Dados
 Dificuldade: Fácil
+IA: Moderado
 Link: https://neps.academy/exercise/384
 """
 def main():
@@ -24,40 +25,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-"""
-def main():
-    # PRIMEIRA PARTE: DEFININDO O TAMANHO DA FILA E ADICIONANDO O IDENTIFICADORES NA FILA
-    fila = []
-    incial_tam = int(input())
-
-    inicial_indentificadores = input().split()
-    inicial_indentificadores = list(map(int, inicial_indentificadores))
-    inicial_indentificadores =  list(dict.fromkeys(inicial_indentificadores))
-
-    for i in range(incial_tam):
-        fila.append(inicial_indentificadores[i])
-
-    # SEGUNDA PARTE: DEFININDO O TAMANHO DA EVASAO E OS IDENTIFICADORES
-    evesao = []
-    evesao_tam = int(input())
-
-    evesao_indentificadores = input().split()
-    evesao_indentificadores = list(map(int, evesao_indentificadores))
-    evesao_indentificadores = list(dict.fromkeys(evesao_indentificadores))
-
-    for i in range(evesao_tam):
-        evesao.append(evesao_indentificadores[i])
-
-    # TERCEIRA PARTE: REMOVENDO EVASAO DA FILA E MOSTRANDO A FILA FINAL
-    for pos in fila[:]:
-        if pos in evesao:
-            fila.remove(pos)
-
-    for pos in range(len(fila)-1):
-        print(fila[pos], end=" ")
-    print(fila[-1], end="")
-
-if __name__ == "__main__":
-    main()
-"""
